@@ -46,6 +46,7 @@ var exchanges = []Exchange{
 	&Bittrex{},
 	&Cryptopia{},
 	&Yobit{},
+	&Liqui{},
 }
 
 func main() {

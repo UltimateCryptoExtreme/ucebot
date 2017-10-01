@@ -132,11 +132,23 @@ func prices(market string) []Price {
 		close(pc)
 	}()
 
+	var maxVol float64
 	for p := range pc {
 		prices = append(prices, p)
+		if p.BaseVolume > maxVol {
+			maxVol = p.BaseVolume
+		}
+	}
+	volLimit := maxVol * 0.10
+
+	pricesFiltered := make([]Price, 0)
+	for _, p := range prices {
+		if p.BaseVolume > volLimit {
+			pricesFiltered = append(pricesFiltered, p)
+		}
 	}
 
-	return prices
+	return pricesFiltered
 }
 
 func formatPrices(prices []Price) string {

@@ -38,5 +38,9 @@
   name = "github.com/ultimatecryptoextreme/go-yobit"
 
 [[constraint]]
+  branch = "master"
+  name = "github.com/ultimatecryptoextreme/go-livecoin"
+
+[[constraint]]
   name = "gopkg.in/telegram-bot-api.v4"
   version = "4.6.0"

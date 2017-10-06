@@ -33,6 +33,12 @@
 
 [[projects]]
   branch = "master"
+  name = "github.com/ultimatecryptoextreme/go-livecoin"
+  packages = ["."]
+  revision = "1aa3e1d1e169f14728854d1873610c6307194b7a"
+
+[[projects]]
+  branch = "master"
   name = "github.com/ultimatecryptoextreme/go-yobit"
   packages = ["."]
   revision = "7c12e0ef0d6e3a9670606d81d0994e4f2865d9fd"
@@ -46,6 +52,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "357c3ccf5c4409249134ad047696a7e3046af92abcf9351b366e2f093809c234"
+  inputs-digest = "012f9b34b68d1cff258915289a9cba68711cbc0a4c35deb1b6d8b6037ea3a143"
   solver-name = "gps-cdcl"
   solver-version = 1
